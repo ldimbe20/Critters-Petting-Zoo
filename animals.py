@@ -1,186 +1,239 @@
 from datetime import date
 
-
-class Cobra():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.slithering = True
-
-Gary = Cobra(1,"Gary","Snake")
-
-print(Gary)       
-
-class Python():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.slithering = True
-
-Louis = Python(2,"Louis", "snake")
-print(Louis)
-        
-class Gecko():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.slithering = True
-              
-Tom = Gecko(3,"Tom", "snake")
-print(Tom)
-              
-class Iguana():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.slithering = True
-        
-Layla = Iguana(4, "Layla", "Lizard")
-
-        
-class Salamander():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.slithering = True
-
-Margot = Salamander(5, "Margot", "Lizard")
-        
-        
-class Tree_Frog():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.slithering = True
-        
-Nattie = Tree_Frog(5, "Nattie", "Frog")
-             
- 
- 
-class Goldfish():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-        
-Goldie = Goldfish(6, "Goldie", "Fish")
-                    
-
-class Dolphin():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-                    
-Linda = Dolphin(7, "Linda", "Mammal")
-
-class Walrus():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-        
-Wilber = Walrus(8, "Wilber", "mammal")
-                    
-                    
-class Mermaid():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-        
-Sandra = Mermaid(9, "Sandra", "mammal")
-                    
-class Shark():
-    def __init__(self, id, name, species):
-        self.id = id
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-
-Susie = Shark(10, "Susie", "mammal")                   
-
 class Hippo():
-    def __init__(self, id, name, species):
-        self.id = id
+    def __init__(self, name, species, shift):
+        self.id = 1
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
-
-Larry = Hippo(11, "Susie", "mammal")  
+        self.shift = shift
+        
+    def __str__(self):
+        return f"{self.name} is a {self.species}" 
+Nora=Hippo(name="Nora", species="mammal", shift="PM")
+ 
 
 class Goat():
-    def __init__(self, id, name, species):
-        self.id = id
+    def __init__(self, name, species, shift):
+        self.id = 2
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
         
-Tammy = Goat(12, "Tammy", "mammal")
+    def __str__(self):
+        return f"{self.name} is a {self.species}" 
+        
+
 
 class Horse():
-    def __init__(self, id, name, species):
-        self.id = id
+    def __init__(self, name, species, shift):
+        self.id = 3
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
         
-Terry = Horse(13, "Terry", "mammal")
+    def __str__(self):
+        return f"{self.name} is a {self.species}" 
+        
+
         
         
 class Chicken():
-    def __init__(self, id, name, species):
-        self.id = id
+    def __init__(self, name, species, shift):
+        self.id = 4
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
+    
+    def __str__(self):
+        return f"{self.name} is a {self.species}" 
         
-Henrietta = Chicken(14, "Henrietta", "mammal")
+
 
 class Pig():
-    def __init__(self, id, name, species):
-        self.id = id
+    def __init__(self, name, species, shift):
+        self.id = 5
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
         
-Babe = Horse(15, "Babe", "mammal")
+    def __str__(self):
+        return f"{self.name} is a {self.species}" 
 
 
+class Goldfish():
+    def __init__(self, name, species):
+        self.id = 6
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.swimming = True
+        
+    def __str__(self):
+        return f"{self.name} is a {self.species}" 
+        
+Goldie = Goldfish( "Goldie", "Fish")
+
+class Dolphin():
+    def __init__(self,  name, species):
+        self.id = 7
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.swimming = True
+        
+    def __str__(self):
+        return f"{self.name} is a {self.species}" 
+                    
+Linda = Dolphin( "Linda", "Mammal")
+
+class Walrus():
+    def __init__(self, name, species):
+        self.id = 8
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.swimming = True
+        
+def __str__(self):
+        return f"{self.name} is a {self.species}" 
+        
+Wilber = Walrus( "Wilber", "mammal")
+                    
+                    
+class Mermaid():
+    def __init__(self, name, species):
+        self.id = 9
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.swimming = True
+def __str__(self):
+        return f"{self.name} is a {self.species}" 
+                    
+class Shark():
+    def __init__(self,  name, species, food):
+        self.id = 10
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.swimming = True
+        self.food = food
+        
+def feed(self):     
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+def __str__(self):
+        return f"{self.name} is a {self.species}" 
+
+Susie = Shark( "Susie", "mammal", "clams")
 
 
+class Cobra():
+    def __init__(self, name, species):
+        self.id = 10
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.slithering = True
+    def __str__(self):
+        return f"{self.name} is a {self.species}" 
+
+Gary = Cobra("Gary","Snake")
+
+class Python():
+    def __init__(self, name, species, food):
+        self.id = 12
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.slithering = True
+        self.food = food
+    
+    def feed(self):     
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+      
+    def __str__(self):
+        return f"{self.name} is a {self.species}"     
+
+Sandra = Python(name="Sandra", species="Lizard", food="lemons")   
+print(Sandra.feed())
+
+class Gecko():
+    def __init__(self, name, species, food):
+        self.id = 13
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.slithering = True
+        self.food = food
+    
+    def feed(self):     
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+      
+    def __str__(self):
+        return f"{self.name} is a {self.species}" 
+    
+Tim = Gecko(species= "lizard", name="Tim", food = "Gummybears")  
+print(Tim.feed())     
+        
+class Iguana():
+    def __init__(self, name, species, food):
+        self.id = 14
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.slithering = True
+        self.food = food
+    
+    def feed(self):     
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+      
+    def __str__(self):
+        return f"{self.name} is a {self.species}"    
+
+lizzie=Iguana("Lizzie","lizard", food="doritos")
+
+print(lizzie.feed())
+
+class Salamander():
+    def __init__(self, name, species, food):
+        self.id = 15
+        self.name = name
+        self.species = species
+        self.date_added = date.today()
+        self.slithering = True
+        self.food = food
+
+    def feed(self):     
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}') 
+      
+    def __str__(self):
+        return f"{self.name} is a {self.species}"    
 
 
+Norbert = Salamander("Norbert", "Salamander", "cheetos" )
 
 
+class Snake_Pit:
 
+    def __init__(self, name):
+        self.attraction_name = name
+        self.description = "slithering creatures"
+        self.animals = list()
+        
+Snake_Pit.animals.append(Norbert)
 
-
-
-
+for animal in Snake_Pit.animals:
+     print(f'You can find {animal.name} the {animal.species} in {Snake_Pit.attraction_name}')
+     
+#chapter 7
